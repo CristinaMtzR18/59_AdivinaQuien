@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Adivina Quien</title> 
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--GoogleFonts-->
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Droid+Sans|Lobster+Two" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Cabecera -->
+        <header class="container">
+            <div class="row">
+                <div class="col s12 l12 center">
+                    <h1>SMASH FACES</h1>
+                </div>
+            </div>
+        </header>
+        <!-- Cuerpo del juego -->
+        <section class="container">
+            <div class="row">
+                <div class="col s12 l12 pd-3 justi">
+                    <p>Bienvenidas al juego de Smash Faces, tu misión es poder identificar a todas tus compañeras de clase ingresando para ellos sus nombre. Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente.</p>
+                </div>
+            </div>
+            <div id="smashDatos">
+                <div class="row">
+                    <div class="col s8 l8">
+                        <p>Elige tu sede:</p>
+                        <div class="input-field">
+                            <select class="sedes" name="sedes">
+                                <option value="0" selected disabled>Selecciona una sede</option>
+                                <option value="valMexico">México</option>
+                                <option value="valLima">Lima</option>
+                            </select>    
+                        </div>
+                    </div>
+                    <div class="col s4 l4">
+                        <p>Puntaje: <span id="puntos"> </span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="smashGame" class="pd-3">
+                <div class="row">
+                    <div class="col s8 l8">
+                        <h3>¿Quién es?</h3>
+                        <div id="smashFotos pd-3">
+                             <!--Foto-->   
+                            <div class="imgFoto">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4 l4">
+                        <p>Ingresa su nombre:</p>
+                        <input id="boxNombre" type="text" name="" placeholder="Nombre">
+                        <button id="btnComprobar" class="waves-effect waves-orange btn">Comprobar</button>
+                        <p id="mensajeJuego"></p>
+                    </div>
+                </div>
+            </div>
+        </section>       
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
